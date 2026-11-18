@@ -7,8 +7,8 @@ spec:
   template:
     spec:
       containers:
-      - name: prime-app
-        image: prime-app:latest
-      imagePullPolicy: IfNotPresent
-      command:["sh", "-c","echo 17 | java PrimeNumber"]
-    restartPolicy: Never
+        - name: prime-app
+          image: prime-app:latest
+          imagePullPolicy: IfNotPresent
+          command: ["sh", "-c", "echo 17 | java PrimeNumber"]
+      restartPolicy: Never
