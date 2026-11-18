@@ -4,7 +4,7 @@ metadata:
   name: prime-job
 spec:
   backoffLimit: 1
-template:
+  template:
     spec:
       containers:
       - name: prime-app
